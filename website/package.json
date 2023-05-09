@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@floating-ui/dom": "^1.2.7",
 		"csv-parser": "^3.0.0",
 		"csvjson": "^5.1.0",
 		"csvtojson": "^2.0.10",

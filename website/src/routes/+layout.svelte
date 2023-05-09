@@ -6,6 +6,10 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
+	import { storePopup } from '@skeletonlabs/skeleton';
+
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	import { setContext } from 'svelte';
 	import { writable } from 'svelte/store';
@@ -13,6 +17,7 @@
 	import type { LayoutData } from './$types';
 	import UserChip from '$lib/components/UserChip.svelte';
 	import NavBar from '$lib/components/NavBar.svelte';
+
 
 	export let data: LayoutData;
 	// Create a store and update it when necessary...
