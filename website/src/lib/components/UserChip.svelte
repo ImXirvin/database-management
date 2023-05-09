@@ -5,7 +5,7 @@
 </script>
 
 
-<div class="card w-fit variant-filled-surface ">
+<div class="card w-fit variant-filled-surface hover:bg-surface-700 hover:cursor-pointer">
     <div class="flex items-center w-fit flex-row h-full ">
         <Avatar initials={`T${$page.data.userPosition.charAt(0)}`} width="w-10" rounded="rounded-full" />
         <div class="ml-3 mr-5 max-w-sm">

@@ -1,4 +1,5 @@
 store_id,staff_id,first_name,last_name,date_of_birth,role,authorised,tenure,annual salary
+947992,951982,EESADASDS,Smith,12/05/1990,Store Manager,No,4 years,"$59,100"
 947992,951982,James,Smith,12/05/1990,Store Manager,No,4 years,"$59,100"
 ,381488,Emma,Johnson,23/09/1988,Warehouse Manager,Yes,11 years,"$77,700"
 ,589197,Noah,Williams,07/11/1983,Warehouse Manager,No,18 years,"$60,600"

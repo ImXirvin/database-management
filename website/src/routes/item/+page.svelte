@@ -16,7 +16,14 @@
 
 </script>
 
-<div class="w-full h-full p-8 flex items-start justify-center">
+<div class="w-full h-full p-8 flex flex-col items-start justify-center gap-y-8">
+	<div class="flex flex-row justify-center items-center w-full">
+		<h1 class="text-2xl font-semibold text-gray-50">Item</h1>
+		<button class="ml-4 btn variant-filled-surface text-gray-900 font-semibold rounded-md px-4 py-2 transition duration-200 ease-in-out" on:click={() => location.reload()}>
+			Reload
+		</button>
+	</div>
+
 	{#if $page.data.userPosition}
 		{#if tableSimple}
 			<Table source={tableSimple} interactive={false} />
