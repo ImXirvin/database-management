@@ -4,7 +4,6 @@ import * as path from 'path';
 import { dirname } from 'path';
 //@ts-ignore
 import PERMISSIONS from './permissions';
-import * as mysql from 'mysql';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -23,13 +22,18 @@ function csvToArr(stringVal: string, splitter: string = ',') {
 	return formedArr;
 }
 
+function arrToCsv(arr: any, splitter: string = ',') {
+	const keys = Object.keys(arr[0]);
+	const values = arr.map((item: any) => Object.values(item));
+	const csv = [keys, ...values].map((item) => item.join(splitter)).join('\n');
+	return csv;
+}
+
 
 
 export class ETL {
 	private csvData: any;
 	private allowedColumns: string[];
-	private rawData: string;
-	private checkIntervalid: any;
 
 	private filename: string;
 	private position: string;
@@ -58,14 +62,20 @@ export class ETL {
 		const rawData: any = fs.readFileSync(path.resolve(__dirname, `${filename}.csv`), 'utf8');
 
 		if (!rawData) return;
-		this.rawData = rawData;
+
+		// Processes CVS data to JSON
 		let unfilteredData: any = csvToArr(rawData, ',');
 
+		// Trims the data to 50 rows
 		unfilteredData = this.trimData(unfilteredData, 50);
 
+		// Gets the allowed columns for the user
 		this.allowedColumns = PERMISSIONS[position][filename];
 
+		// Filters the data based on the permissions
 		this.csvData = this.filterForWithPermissions(unfilteredData, this.allowedColumns);
+
+		// Saves the data to a file
 		this.saveData(filename, position);
 
 	}
@@ -79,8 +89,7 @@ export class ETL {
 	}
 
 	private saveData(filename: string, position: string) {
-		//save
-		// const csvRaw = csvToArr(this.csvData, ",");
-		// fs.writeFileSync(path.resolve(__dirname, `${filename}_${position}.csv`), csvRaw);
+		const csvRaw = arrToCsv(this.csvData, ",");
+		fs.writeFileSync(path.resolve(__dirname, `./processed/${filename}_${position}.csv`), csvRaw);
 	}
 }
