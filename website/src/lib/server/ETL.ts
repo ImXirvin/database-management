@@ -43,6 +43,7 @@ export class ETL {
 		return data.map((row: any) => {
 			const filteredRow: any = {};
 
+			// Filters the row based on the allowed columns
 			allowedColumns.forEach((column: string) => {
 				filteredRow[column] = row[column];
 			});
@@ -57,8 +58,11 @@ export class ETL {
 	constructor(filename: string, position: string) {
 		if (!filename || !position) return;
 
+		// Sets the filename and position
 		this.filename = filename;
 		this.position = position;
+
+		// Gets the raw data from the file
 		const rawData: any = fs.readFileSync(path.resolve(__dirname, `${filename}.csv`), 'utf8');
 
 		if (!rawData) return;
@@ -90,6 +94,7 @@ export class ETL {
 
 	private saveData(filename: string, position: string) {
 		const csvRaw = arrToCsv(this.csvData, ",");
+		// Writes the data to a file with the filename and position
 		fs.writeFileSync(path.resolve(__dirname, `./processed/${filename}_${position}.csv`), csvRaw);
 	}
 }
