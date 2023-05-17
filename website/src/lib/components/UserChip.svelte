@@ -20,10 +20,10 @@
         <Avatar initials={`T${$page.data.userPosition.charAt(0)}`} width="w-10" rounded="rounded-full" />
         <div class="ml-3 mr-5 max-w-sm">
             <div class="text-sm font-medium text-white">
-                Test { $page.data.userPosition }
+                { $page.data.userPosition } Account
             </div>
             <div class="text-sm text-gray-400">
-                {$page.data.userPosition}
+                {$page.data.userPosition} Manager
             </div>
         </div>
     </button>

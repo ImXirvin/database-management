@@ -14,7 +14,7 @@ const PERMISSIONS: Permissions = {
 			'sku'
 		],
 
-		['order']: ['order_name', 'order_id', 'store_id', 'order_date', 'status', 'delivery_ets'],
+		['order']: ['order_name', 'order_id', 'store_id', 'order_date', 'status', 'delivery_eta'],
 
 		['store']: ['store_id', 'store_address', 'postcodes', 'warehouse_id', 'stock'],
 
@@ -43,6 +43,71 @@ const PERMISSIONS: Permissions = {
 			'annual salary'
 		]
 	},
+
+	["Warehouse"]: {
+		['warehouse']: [
+			'warehouse_id',
+			'warehouse_address',
+			'total_capacity',
+			'remaining_capacity',
+		],
+
+		['staff']: [
+			'store_id',
+			'staff_id',
+			'first_name',
+			'last_name',
+			'date_of_birth',
+			'role',
+			'authorised',
+		],
+
+		['item']: [
+			'item_name',
+			'description',
+			'item_price',
+			'sku'
+		],
+
+		['order']: [
+			'order_id',
+			'store_id',
+			'order_date',
+			'status',
+			'delivery_eta',
+		]
+	},
+
+	['Store']: {
+		['warehouse']: [],
+
+		['store']: [],
+
+		['staff']: [
+			'store_id',
+			'staff_id',
+			'first_name',
+			'last_name',
+			'date_of_birth',
+			'role',
+		],
+
+		['item']: [
+			'item_name',
+			'description',
+			'item_price',
+			'sku'
+		],
+
+		['order']: [
+			'order_id',
+			'store_id',
+			'order_date',
+			'status',
+			'delivery_eta',
+		]
+	}
+
 };
 
 export default PERMISSIONS;
