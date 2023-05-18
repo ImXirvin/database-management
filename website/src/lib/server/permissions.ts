@@ -40,7 +40,7 @@ const PERMISSIONS: Permissions = {
 			'role',
 			'authorised',
 			'tenure',
-			'annual salary'
+			'annual_salary'
 		]
 	},
 

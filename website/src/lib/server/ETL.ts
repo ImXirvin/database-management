@@ -80,7 +80,7 @@ export class ETL {
 		this.csvData = this.filterForWithPermissions(unfilteredData, this.allowedColumns);
 
 		// Saves the data to a file
-		this.saveData(filename, position);
+		this.saveAsSeperateFile();
 
 	}
 
@@ -92,9 +92,54 @@ export class ETL {
 		return this.allowedColumns;
 	}
 
-	private saveData(filename: string, position: string) {
+	addRow(row: any) {
+		const rawData: any = fs.readFileSync(path.resolve(__dirname, `${this.filename}.csv`), 'utf8');
+
+		// Processes CVS data to JSON
+		let unfilteredData: any = csvToArr(rawData, ',');
+		unfilteredData.unshift(row);
+		this.saveData(unfilteredData);
+	}
+
+	removeRow(row: any) {
+		const rawData: any = fs.readFileSync(path.resolve(__dirname, `${this.filename}.csv`), 'utf8');
+
+		// Processes CVS data to JSON
+		let unfilteredData: any = csvToArr(rawData, ',');
+		// Filter out rows that match the row we are trying to insert
+
+		let isRemoved = false;
+		unfilteredData = unfilteredData.filter((rawRow: any) =>{
+			for (const key in row) {
+				if (row[key] !== "") {
+					if (row[key] !== rawRow[key]) return true;
+				}
+			}
+			return false;
+		});
+
+		// check if the row was removed
+		if (unfilteredData.length !== rawData.length) {
+			isRemoved = true;
+			console.log("Row was removed");
+		} else {
+			console.log("Row was not removed");
+			return
+		}
+		
+		this.saveData(unfilteredData);
+
+	}
+
+	private saveData(newData: any) {
+		const csvRaw = arrToCsv(newData, ",");
+		// Writes the data to a file with the filename and position
+		fs.writeFileSync(path.resolve(__dirname, `${this.filename}.csv`), csvRaw);
+	}
+
+	private saveAsSeperateFile() {
 		const csvRaw = arrToCsv(this.csvData, ",");
 		// Writes the data to a file with the filename and position
-		fs.writeFileSync(path.resolve(__dirname, `./processed/${filename}_${position}.csv`), csvRaw);
+		fs.writeFileSync(path.resolve(__dirname, `./processed/${this.filename}_${this.position}.csv`), csvRaw);
 	}
 }

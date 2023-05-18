@@ -1,52 +1,52 @@
-store_id,staff_id,first_name,last_name,date_of_birth,role,authorised,tenure,annual salary
-947992,951982,EESADASDS,Smith,12/05/1990,Store Manager,No,4 years,"$59,100"
-947992,951982,James,Smith,12/05/1990,Store Manager,No,4 years,"$59,100"
-,381488,Emma,Johnson,23/09/1988,Warehouse Manager,Yes,11 years,"$77,700"
-,589197,Noah,Williams,07/11/1983,Warehouse Manager,No,18 years,"$60,600"
-,312865,Olivia,Jones,28/06/1989,Corporate,Yes,16 years,"$123,000"
-,560086,Liam,Brown,15/03/1998,Store Manager,No,16 years,"$41,700"
-435497,830241,Ava,Davis,04/08/1994,Warehouse Manager,No,5 years,"$91,100"
-,251501,William,Miller,19/12/1979,Corporate,No,8 years,"$142,000"
-,681692,Isabella,Wilson,30/01/1976,Store Manager,Yes,20 years,"$48,500"
-,916846,Benjamin,Moore,11/07/1992,Warehouse Manager,No,25 years,"$67,200"
-,268729,Sophia,Taylor,26/09/1987,Warehouse Manager,Yes,3 years,"$72,900"
-,478862,Mason,Anderson,03/04/1986,Store Manager,Yes,7 years,"$50,400"
-,840657,Mia,Thomas,14/10/1996,Corporate,Yes,17 years,"$124,000"
-444335,159805,Alexander,Jackson,07/02/1980,Corporate,Yes,25 years,"$126,000"
-,232010,Charlotte,White,18/06/1991,Corporate,No,14 years,"$111,000"
-,567193,Henry,Harris,29/08/1985,Warehouse Manager,No,13 years,"$96,200"
-,915063,Amelia,Martin,09/12/1995,Warehouse Manager,Yes,5 years,"$84,000"
-,159576,Jacob,Thompson,22/03/1978,Store Manager,No,10 years,"$51,200"
-589307,381830,Harper,Garcia,05/07/1993,Corporate,No,20 years,"$121,000"
-,121659,Michael,Martinez,16/11/1981,Store Manager,No,10 years,"$51,300"
-,421014,Evelyn,Robinson,27/02/1984,Store Manager,Yes,8 years,"$45,900"
-,460717,Elijah,Clark,10/08/1997,Corporate,Yes,12 years,"$132,000"
-,958482,Abigail,Rodriguez,21/01/1982,Store Manager,No,12 years,"$44,100"
-,702676,Daniel,Lewis,02/05/1999,Warehouse Manager,Yes,21 years,"$81,000"
-,125907,Emily,Lee,13/09/1983,Corporate,No,14 years,"$105,000"
-,233588,Matthew,Walker,24/12/1990,Warehouse Manager,Yes,4 years,"$76,700"
-865952,102465,Elizabeth,Hall,08/04/1977,Store Manager,No,6 years,"$56,300"
-,576530,Aiden,Allen,19/10/1986,Warehouse Manager,Yes,14 years,"$73,600"
-,284943,Sofia,Young,30/01/1989,Store Manager,Yes,23 years,"$41,700"
-,599974,Joseph,Hernandez,11/07/1984,Warehouse Manager,No,15 years,"$90,100"
-,216456,Avery,King,22/11/1992,Warehouse Manager,No,22 years,"$70,600"
-,572769,Samuel,Wright,05/03/1979,Corporate,Yes,4 years,"$131,000"
-,169211,Ella,Lopez,16/07/1991,Warehouse Manager,No,3 years,"$64,700"
-819569,120813,David,Hill,27/09/1980,Corporate,No,13 years,"$108,000"
-,935270,Scarlett,Scott,08/02/1998,Warehouse Manager,Yes,16 years,"$84,000"
-,640487,Carter,Green,19/06/1994,Store Manager,No,14 years,"$43,400"
-,457212,Grace,Adams,02/10/1978,Store Manager,No,14 years,"$52,300"
-,501566,Owen,Baker,13/02/1996,Warehouse Manager,Yes,21 years,"$60,800"
-907948,478132,Chloe,Gonzalez,24/08/1981,Corporate,Yes,8 years,"$125,000"
-,990604,Gabriel,Nelson,07/12/1995,Warehouse Manager,No,7 years,"$60,500"
-,653459,Victoria,Carter,18/04/1976,Corporate,Yes,17 years,"$148,000"
-,521695,Anthony,Mitchell,29/08/1993,Store Manager,No,17 years,"$51,200"
-,942437,Madison,Perez,10/01/1982,Store Manager,No,18 years,"$57,700"
-404428,393972,Jackson,Roberts,21/05/1987,Corporate,No,5 years,"$140,000"
-,484756,Lily,Turner,01/09/1990,Store Manager,Yes,22 years,"$45,700"
-,793880,John,Phillips,14/03/1985,Store Manager,Yes,15 years,"$53,500"
-,810114,Layla,Campbell,25/07/1997,Warehouse Manager,No,14 years,"$79,800"
-,403672,Dylan,Parker,06/12/1983,Store Manager,No,10 years,"$55,700"
-656693,393007,Penelope,Evans,17/02/1992,Store Manager,Yes,10 years,"$42,600"
-,941007,Luke,Edwards,28/06/1980,Warehouse Manager,Yes,22 years,"$95,700"
-,768152,Zoey,Collins,09/11/1998,Corporate,No,19 years,"$122,000"
+store_id,staff_id,first_name,last_name,date_of_birth,role,authorised,tenure,annual_salary
+947992,951982,EESADASDS,Smith,12/05/1990,Store Manager,No,4 years,"$59
+947992,951982,James,Smith,12/05/1990,Store Manager,No,4 years,"$59
+,381488,Emma,Johnson,23/09/1988,Warehouse Manager,Yes,11 years,"$77
+,589197,Noah,Williams,07/11/1983,Warehouse Manager,No,18 years,"$60
+,312865,Olivia,Jones,28/06/1989,Corporate,Yes,16 years,"$123
+,560086,Liam,Brown,15/03/1998,Store Manager,No,16 years,"$41
+435497,830241,Ava,Davis,04/08/1994,Warehouse Manager,No,5 years,"$91
+,251501,William,Miller,19/12/1979,Corporate,No,8 years,"$142
+,681692,Isabella,Wilson,30/01/1976,Store Manager,Yes,20 years,"$48
+,916846,Benjamin,Moore,11/07/1992,Warehouse Manager,No,25 years,"$67
+,268729,Sophia,Taylor,26/09/1987,Warehouse Manager,Yes,3 years,"$72
+,478862,Mason,Anderson,03/04/1986,Store Manager,Yes,7 years,"$50
+,840657,Mia,Thomas,14/10/1996,Corporate,Yes,17 years,"$124
+444335,159805,Alexander,Jackson,07/02/1980,Corporate,Yes,25 years,"$126
+,232010,Charlotte,White,18/06/1991,Corporate,No,14 years,"$111
+,567193,Henry,Harris,29/08/1985,Warehouse Manager,No,13 years,"$96
+,915063,Amelia,Martin,09/12/1995,Warehouse Manager,Yes,5 years,"$84
+,159576,Jacob,Thompson,22/03/1978,Store Manager,No,10 years,"$51
+589307,381830,Harper,Garcia,05/07/1993,Corporate,No,20 years,"$121
+,121659,Michael,Martinez,16/11/1981,Store Manager,No,10 years,"$51
+,421014,Evelyn,Robinson,27/02/1984,Store Manager,Yes,8 years,"$45
+,460717,Elijah,Clark,10/08/1997,Corporate,Yes,12 years,"$132
+,958482,Abigail,Rodriguez,21/01/1982,Store Manager,No,12 years,"$44
+,702676,Daniel,Lewis,02/05/1999,Warehouse Manager,Yes,21 years,"$81
+,125907,Emily,Lee,13/09/1983,Corporate,No,14 years,"$105
+,233588,Matthew,Walker,24/12/1990,Warehouse Manager,Yes,4 years,"$76
+865952,102465,Elizabeth,Hall,08/04/1977,Store Manager,No,6 years,"$56
+,576530,Aiden,Allen,19/10/1986,Warehouse Manager,Yes,14 years,"$73
+,284943,Sofia,Young,30/01/1989,Store Manager,Yes,23 years,"$41
+,599974,Joseph,Hernandez,11/07/1984,Warehouse Manager,No,15 years,"$90
+,216456,Avery,King,22/11/1992,Warehouse Manager,No,22 years,"$70
+,572769,Samuel,Wright,05/03/1979,Corporate,Yes,4 years,"$131
+,169211,Ella,Lopez,16/07/1991,Warehouse Manager,No,3 years,"$64
+819569,120813,David,Hill,27/09/1980,Corporate,No,13 years,"$108
+,935270,Scarlett,Scott,08/02/1998,Warehouse Manager,Yes,16 years,"$84
+,640487,Carter,Green,19/06/1994,Store Manager,No,14 years,"$43
+,457212,Grace,Adams,02/10/1978,Store Manager,No,14 years,"$52
+,501566,Owen,Baker,13/02/1996,Warehouse Manager,Yes,21 years,"$60
+907948,478132,Chloe,Gonzalez,24/08/1981,Corporate,Yes,8 years,"$125
+,990604,Gabriel,Nelson,07/12/1995,Warehouse Manager,No,7 years,"$60
+,653459,Victoria,Carter,18/04/1976,Corporate,Yes,17 years,"$148
+,521695,Anthony,Mitchell,29/08/1993,Store Manager,No,17 years,"$51
+,942437,Madison,Perez,10/01/1982,Store Manager,No,18 years,"$57
+404428,393972,Jackson,Roberts,21/05/1987,Corporate,No,5 years,"$140
+,484756,Lily,Turner,01/09/1990,Store Manager,Yes,22 years,"$45
+,793880,John,Phillips,14/03/1985,Store Manager,Yes,15 years,"$53
+,810114,Layla,Campbell,25/07/1997,Warehouse Manager,No,14 years,"$79
+,403672,Dylan,Parker,06/12/1983,Store Manager,No,10 years,"$55
+656693,393007,Penelope,Evans,17/02/1992,Store Manager,Yes,10 years,"$42
+,941007,Luke,Edwards,28/06/1980,Warehouse Manager,Yes,22 years,"$95
+,768152,Zoey,Collins,09/11/1998,Corporate,No,19 years,"$122
